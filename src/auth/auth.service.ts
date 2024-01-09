@@ -30,7 +30,7 @@ export class AuthService {
     
      await newUser.save();
      const {password:_, ...user}= newUser.toJSON();
-
+    
     return user;
 
     //1.- Encriptar la contraseña
