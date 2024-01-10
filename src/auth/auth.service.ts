@@ -91,8 +91,8 @@ export class AuthService {
     //*Token => AJBDJD;SNJ/"TGJ"
     //*/
   }
-  findAll() { 
-    return `This action returns all auth`;
+  findAll() : Promise<User[]> { 
+    return this.userModel.find();
   }
 
   findOne(id: number) {
