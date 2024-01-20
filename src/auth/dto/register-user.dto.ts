@@ -11,7 +11,11 @@ export class RegisterUserDto {
 
     @MinLength(6)
     password: string;
+    
+    // @MinLength(6)
+    // password2: string;
 
-
+    // @IsString()
+    // roles: string[];
 
 }
